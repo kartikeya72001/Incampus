@@ -5,21 +5,26 @@
          <link rel="shortcut icon" href="#">
         <link rel="stylesheet" href="Profile.css">  
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:900&display=swap" rel="stylesheet">
         <title>
             One Time Password
         </title>
     </head>
     
 
-    <body>
+    <body style="font-family: 'Oswald', sans-serif; font-weight: bolder">
         <canvas id="c"></canvas>        
         
         <div class="outer">
             <div class="middle">
-                <div class="card" style="width: 25rem; height: 25rem; background-color:black; border-radius: 4%;">
+                <div class="card" style="width: 25rem; height: 25rem; border-radius: 4%;">
     <div class="card-body">
-    <h5 class="card-title">OTP</h5>
-    <p class="card-text">Text Goes Here</p>
+    <h5 class="card-title" style="font-family: 'Muli', sans-serif;
+">OTP</h5>
+    <p class="card-text" style="font-family: 'Muli', sans-serif;
+
+">Text Goes Here</p>
         <form>
             <input class="input" type="text" maxlength="1" >
             <input class="input" type="text" maxlength="1" >
@@ -28,7 +33,8 @@
             
         </form>
         <br><br>
-    <a href="#" class="btn btn-primary" >Go somewhere</a>
+    <a href="#" class="btn btn-primary" >Generate OTP</a>
+    <a href="#" class="btn btn-primary" >Resend OTP</a>
   </div>
 </div>
             </div>

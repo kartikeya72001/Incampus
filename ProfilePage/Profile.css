@@ -28,9 +28,7 @@ canvas {
   width: 100vw;
   height: 100vh;
 }
-.card-title{
-   color:aliceblue; 
-}
-.card-text{
-   color:aliceblue; 
+.btn{
+    margin-left: 5%;
+    margin-right: 5%;
 }
