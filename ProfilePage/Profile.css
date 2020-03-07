@@ -1,6 +1,7 @@
 .card{
     margin-right:auto;
     margin-left: auto;
+    padding-top: 5%;
 }
 .outer {
   display: table;
