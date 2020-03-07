@@ -1,3 +1,8 @@
+function Generate()
+{
+    window.alert("OTP Sent!!\nCheck Mobile");
+    document.getElementById('sent').innerHTML="Enter The Code Recieved on Your Number"
+}
 var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 var cH;
