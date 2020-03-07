@@ -1,0 +1,30 @@
+.card{
+    margin-right:auto;
+    margin-left: auto;
+}
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.input{
+    width: 10%;
+    float: left;
+    margin:7%;
+}
+.card-body{
+    text-align: center;
+}
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
