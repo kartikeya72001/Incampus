@@ -58,6 +58,15 @@
     border:none;
     padding: 0px 1rem 0rem 1rem;
 }
+.number{
+    margin-top:4%;
+    width:17rem;
+    height:2.5rem;
+    background-color:#EEEEEE;
+    border:none;
+    padding: 0px 1rem 0rem 1rem;
+    margin-bottom: 1rem;
+}
 #b1{
     width:35%;
     height:8%;
