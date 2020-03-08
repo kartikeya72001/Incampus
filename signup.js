@@ -1,3 +1,7 @@
+var can = document.getElementById("c");
+
+can.style.width = window.innerWidth + "px";
+can.style.height = window.innerHeight + "px";
 console.log("My")
 document.getElementById("b2").onclick = function(){
     console.log("nikhil");
