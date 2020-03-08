@@ -5,11 +5,13 @@
     left: 0;
     height: 100%;
     width: 100%;
+    border: none;
   }
   
   .middle {
     display: table-cell;
     vertical-align: middle;
+      border:none;
   }
 #main{
     height: 35rem;
@@ -17,7 +19,8 @@
     border-radius: 40px;
     margin-left:auto;
     margin-right:auto;
-    box-shadow: 5px 5px 10px rgb(168, 168, 168);
+    box-shadow: 2px 1px 5px 5px rgba(168, 168, 168, 0.4);
+    background-color: white;
 }
 .part{
     height:35rem;
@@ -170,4 +173,9 @@
     left:50%;
     z-index:10;
     display:none;
+}
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
 }

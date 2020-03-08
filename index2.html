@@ -18,23 +18,24 @@
         
         <div class="outer">
             <div class="middle">
-                <div class="card" style="width: 22rem; height: 25rem; border-radius: 4%; border: 2px black solid;">
+                <div class="card" style="width: 22rem; height: 34rem; border-radius: 2em; box-shadow:  5px 5px 20px, -5px -5px 20px;">
     <div class="card-body">
     <h5 class="card-title" style="font-family: 'Muli', sans-serif; font-weight: 1000; font-size: 32px;
-">One Time Password</h5>
-    <p class="card-text" id="sent" style="font-family: 'Muli', sans-serif;
-
-"></p>
+">Verification</h5>
+        <img src="OTP%20anime.gif" width = 85%>
+    <div class="card-text" id="sent" style="font-family: 'Muli', sans-serif; padding-top: 6%; letter-spacing: 0.5px">Enter the verification Code we just sent you on your phone...</div>
         <form>
-            <input class="input" type="text" maxlength="1" >
-            <input class="input" type="text" maxlength="1" >
-            <input class="input" type="text"  maxlength="1" >
-            <input class="input" type="text" maxlength="1" >
+            <input class="input" type="text" maxlength="1" style="text-align: center">
+            <input class="input" type="text" maxlength="1" style="text-align: center" >
+            <input class="input" type="text"  maxlength="1" style="text-align: center" >
+            <input class="input" type="text" maxlength="1" style="text-align: center" >
             
         </form>
         <br><br>
-    <a href="#" class="btn btn-success" onclick="Generate()" >Generate OTP</a>
-    <a href="#" class="btn btn-success" >Verify OTP</a>
+        <br>
+        <div style="padding-bottom: 6%; letter-spacing: 1.1px; color: darkgray" >If you didn't recieve a code! <a href="#" onclick="Generate()" >Resend</a> </div>
+        
+    <a href="#" class="btn btn-success" style="padding: 3% 10% 4% 10%; border-radius: 1.6em; letter-spacing: 1.1px" >Verify</a>
   </div>
 </div>
             </div>

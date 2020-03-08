@@ -1,7 +1,7 @@
 .card{
     margin-right:auto;
     margin-left: auto;
-    padding-top: 5%;
+    padding-top: 1%;
 }
 .outer {
   display: table;
@@ -20,6 +20,13 @@
     width: 10%;
     float: left;
     margin:7%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.input:focus{
+    outline: none;
 }
 .card-body{
     text-align: center;
