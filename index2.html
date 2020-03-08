@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="Profile.css">  
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:900&display=swap" rel="stylesheet">
+        <title>
+            One Time Password
+        </title>
+    </head>
+    
+
+    <body style="font-family: 'Oswald', sans-serif; font-weight: bolder">
+        <canvas id="c"></canvas>        
+        
+        <div class="outer">
+            <div class="middle">
+                <div class="card" style="width: 22rem; height: 25rem; border-radius: 4%; border: 2px black solid;">
+    <div class="card-body">
+    <h5 class="card-title" style="font-family: 'Muli', sans-serif; font-weight: 1000; font-size: 32px;
+">One Time Password</h5>
+    <p class="card-text" id="sent" style="font-family: 'Muli', sans-serif;
+
+"></p>
+        <form>
+            <input class="input" type="text" maxlength="1" >
+            <input class="input" type="text" maxlength="1" >
+            <input class="input" type="text"  maxlength="1" >
+            <input class="input" type="text" maxlength="1" >
+            
+        </form>
+        <br><br>
+    <a href="#" class="btn btn-success" onclick="Generate()" >Generate OTP</a>
+    <a href="#" class="btn btn-success" >Verify OTP</a>
+  </div>
+</div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+        <script src="Profile.js"></script>
+    </body>
+</html>
