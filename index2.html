@@ -10,6 +10,8 @@
         <title>
             One Time Password
         </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     </head>
     
 
@@ -25,11 +27,10 @@
         <img src="OTP%20anime.gif" width = 85%>
     <div class="card-text" id="sent" style="font-family: 'Muli', sans-serif; padding-top: 6%; letter-spacing: 0.5px">Enter the verification Code we just sent you on your phone...</div>
         <form>
-            <input class="input" type="text" maxlength="1" style="text-align: center">
-            <input class="input" type="text" maxlength="1" style="text-align: center" >
-            <input class="input" type="text"  maxlength="1" style="text-align: center" >
-            <input class="input" type="text" maxlength="1" style="text-align: center" >
-            
+            <input class="input" type="text" maxlength="1" onkeyup="moveNext(this);" id="input1" style="text-align: center">
+            <input class="input" type="text" maxlength="1" id="input2" onKeyUp="moveNext(this);" style="text-align: center" >
+            <input class="input" type="text"  maxlength="1" id="input3" onkeyup="moveNext(this);" style="text-align: center" >
+            <input class="input" type="text" maxlength="1" id="input4" onkeyup="moveNext(this);" style="text-align: center" >
         </form>
         <br><br>
         <br>
@@ -42,5 +43,17 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
         <script src="Profile.js"></script>
+        <script>
+            function moveNext(elem) {
+                    setTimeout(function(){ console.log($(elem).val()); }, 500);
+                    if($(elem).val() === "") {
+                        
+                        $(elem).prev().focus();
+                    } else {
+                        $(elem).next().focus();
+                    }
+            }
+        </script>
+        
     </body>
 </html>
