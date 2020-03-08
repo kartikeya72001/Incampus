@@ -15,7 +15,7 @@
   }
 #main{
     height: 35rem;
-    width: 35rem;
+    width: 45rem;
     border-radius: 40px;
     margin-left:auto;
     margin-right:auto;
@@ -24,9 +24,8 @@
 }
 .part{
     height:35rem;
-    width:17.5rem;
+    width:22.5rem;
     text-align: center;
-
 }
 #signin{
     position:absolute;
@@ -45,19 +44,19 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .email{
-    width: 12rem;
+    width: 17rem;
     height: 2.5rem;
     background-color:#EEEEEE;
     border:none;
-    padding: 0px 0px 0px 5rem;
+    padding: 0px 1rem 0rem 1rem;
     margin-bottom: 1rem;
 }
 .password{
-    width: 12rem;
+    width: 17rem;
     height: 2.5rem;
     background-color:#EEEEEE;
     border:none;
-    padding: 0px 0px 0px 4rem;
+    padding: 0px 1rem 0rem 1rem;
 }
 #b1{
     width:35%;
@@ -152,18 +151,18 @@
     font-weight:bold;
 }
 #name{
-    width:12rem;
+    width:17rem;
     height:2.5rem;
     background-color:#EEEEEE;
     border:none;
-    padding: 0px 0px 0px 5rem;
+    padding: 0px 1rem 0rem 1rem;
     margin-bottom: 1rem;
 }
 #background{
     position:absolute;
     left:50%;
     height:35rem;
-    width:17.5rem;
+    width:22.5rem;
     background-color:#FF464E;
     z-index:0;
     border-radius: 0px 40px 40px 0px;
