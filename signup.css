@@ -19,7 +19,7 @@
     border-radius: 40px;
     margin-left:auto;
     margin-right:auto;
-    box-shadow: 2px 1px 5px 5px rgba(168, 168, 168, 0.4);
+    border-radius: 2em; box-shadow:  5px 5px 20px, -5px -5px 20px;
     background-color: white;
 }
 .part{
