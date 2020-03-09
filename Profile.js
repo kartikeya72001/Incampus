@@ -1,3 +1,8 @@
+var can = document.getElementById("c");
+
+can.style.width = window.innerWidth + "px";
+can.style.height = window.innerHeight + "px";
+
 function Generate()
 {
     window.alert("OTP Sent!!\nCheck Mobile");
