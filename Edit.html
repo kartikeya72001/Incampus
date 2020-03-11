@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-          content="Coding Blocks User Account Management website. Create an account to enroll for Coding Blocks online courses">
 
         <title>Coding Blocks Account</title>
 
@@ -42,7 +40,7 @@
 
         gtag('js', new Date())
         gtag('config', 'UA-83327907-12')
-        gtag('set', {'user_id': 63154 }) // Set the user ID using signed-in user_id.
+        gtag('set', {'user_id': XXXXX }) // Set the user ID using signed-in user_id.
     </script>
 
     <link rel="icon" href="/img/favicon-16x16.png"  sizes="16x16">
@@ -192,26 +190,26 @@
         
             <div>
               <div class="flex-row">
-                <a href="/users/me"><span class="pointer red">MY PROFILE</span></a>
+                <a href="#"><span class="pointer red">MY PROFILE</span></a>
               </div>
               <div class="separator"></div>
               <div class="flex-row">
-                <a href="/address/"><span class="pointer ">MY ADDRESSES</span></a>
+                <a href="#"><span class="pointer ">MY ADDRESSES</span></a>
               </div>
               <div class="flex-row">
-                <a href="/users/me/organisations"><span class="pointer ">MY ORGANISATIONS</span></a>
-              </div>
-              <div class="separator"></div>
-              <div class="flex-row">
-                <a href="/apps"><span class="pointer ">MY APPS</span></a>
+                <a href="#"><span class="pointer ">MY ORGANISATIONS</span></a>
               </div>
               <div class="separator"></div>
               <div class="flex-row">
-                <a href="/users/me/clients"><span class="pointer ">MY CLIENTS</span></a>
+                <a href="#"><span class="pointer ">MY APPS</span></a>
+              </div>
+              <div class="separator"></div>
+              <div class="flex-row">
+                <a href="#"><span class="pointer ">MY CLIENTS</span></a>
               </div>
               <div class="separator"></div>
               <div class="flex-row faded">
-                <a href="/logout"><span class="pointer">LOGOUT</span></a>
+                <a href="#"><span class="pointer">LOGOUT</span></a>
               </div>
             </div>
           </div>
@@ -372,7 +370,7 @@
                 </div>
             </div>            <div class="row justify-content-between align-items-center profile-row">
                 <div class="round-img">
-                        <img class="round-img user-pic" src="https://lh3.googleusercontent.com/a-/AAuE7mC69MMtbQgWL2xUHXdtkt6mRaYVJDVe0qkDw4EPVw&#x3D;s50">
+                        <img class="round-img user-pic" src="SecProfilePic.jpg">
                 </div>
 
                 <div class="button-solid">
@@ -385,24 +383,24 @@
             <div class="attributes">
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">UserID</div>
-                    <input class="input-text col-9" type="text" id="userid" disabled value="63154"/>
+                    <input class="input-text col-9" type="text" id="userid" disabled value="XXXXX"/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">Username</div>
-                    <input type="text" class="input-text col-9" id="username" disabled value="kartikeya72001"/>
+                    <input type="text" class="input-text col-9" id="username" disabled value="XXXXXXXXXX"/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">Firstname</div>
                     <input type="text" id="firstname" class="input-text col-9" name="firstname"
-                           value="Kartikeya"/>
+                           value="John"/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">Lastname</div>
                     <input class="input-text col-9" type="text" name="lastname" id="lastname"
-                           value="Agarwal"/>
+                           value="Doe"/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
@@ -418,27 +416,10 @@
                         </option>
                     </select>
                 </div>
-
-                <div class="row no-gutters align-items-center justify-content-between detail-row">
-                    <div class="label-input col-2">Your T-shirt Size</div>
-                    <select class="col-9 input-text" name="apparelGoodiesSize" id="apparelGoodiesSize">
-                        <option value="" >Choose your fit
-                        </option>
-                        <option value="S" >S - Small
-                        </option>
-                        <option value="M" >M - Medium
-                        </option>
-                        <option value="L" >L - Large
-                        </option>
-                        <option value="XL" >XL - Extra Large
-                        </option>
-                    </select>
-                </div>
-
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">Email</div>
                         <input type="text" id="email" name="email" class="input-text col-9" disabled
-                               value="kartikeya72001@gmail.com"/>
+                               value="johnDoe@xmail.com"/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
@@ -1167,7 +1148,7 @@
                     </select>
 
                     <input class="input-text col-5" type="text" name="mobile_number" id="mobile_number"
-                           value="9718502020"/>
+                           value=""/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
@@ -1312,7 +1293,7 @@
                                 <option class="dropdown-li" value="180">National Institute of Technology, Goa</option>
                                 <option class="dropdown-li" value="156">National Institute of Technology, Kurukshetra</option>
                                 <option class="dropdown-li" value="158">National Institute of Technology, Uttarakhand</option>
-                                <option class="dropdown-li" value="65" selected>Netaji Subhas Institute Of Technology (New Delhi)</option>
+                                <option class="dropdown-li" value="65" >Netaji Subhas Institute Of Technology (New Delhi)</option>
                                 <option class="dropdown-li" value="63">NIT, Karnataka (Mangalore)</option>
                                 <option class="dropdown-li" value="172">Noida Institute of Engineering and Technology (NIET)</option>
                                 <option class="dropdown-li" value="162">Panipat Institute of Engineering &amp; Technology</option>
@@ -1380,7 +1361,7 @@
                                 <option class="dropdown-li" value="7">(B.Tech/BE) Chemical / Petroleum / Textile</option>
                                 <option class="dropdown-li" value="8">(B.Tech/BE) BioTech / Environmental</option>
                                 <option class="dropdown-li" value="9">(B.Tech/BE) Others</option>
-                                <option class="dropdown-li" value="10" selected>(M.Tech/ME) Computers / IT / Software</option>
+                                <option class="dropdown-li" value="10" >(M.Tech/ME) Computers / IT / Software</option>
                                 <option class="dropdown-li" value="11">(M.Tech/ME) Electrical / Electronics</option>
                                 <option class="dropdown-li" value="12">(M.Tech/ME) Mechanical / Automobile / Aeronautical</option>
                                 <option class="dropdown-li" value="13">(M.Tech/ME) Production / Manufacturing</option>
@@ -1409,7 +1390,7 @@
                     <select name="gradYear" class="input-text col-9" required>
                                 <option class="dropdown-li" value="2025">2025</option>
                                 <option class="dropdown-li" value="2024">2024</option>
-                                <option class="dropdown-li" value="2023" selected>2023</option>
+                                <option class="dropdown-li" value="2023" >2023</option>
                                 <option class="dropdown-li" value="2022">2022</option>
                                 <option class="dropdown-li" value="2021">2021</option>
                                 <option class="dropdown-li" value="2020">2020</option>
@@ -1441,7 +1422,7 @@
                         <button type="reset">RESET</button>
                     </div>
                     <div class="button-solid">
-                        <button type="submit">SAVE CHANGES</button>
+                        <button type="submit" onclick="Saved()">SAVE CHANGES</button>
                     </div>
                 </div>
             </div>
@@ -1450,5 +1431,11 @@
 </div>
 
 </div>
+    <script>
+        function Saved()
+        {
+            window.alert("Your Data Has Been Saved");
+        }
+    </script>
 </body>
 </html>
