@@ -12,6 +12,7 @@
     <script src="https://use.fontawesome.com/152fef14b6.js"></script>
     <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!-- Google Tag Manager -->
@@ -174,16 +175,13 @@
                 <a href="#"><span class="pointer black">MY ADDRESSES</span></a>
               </div>
               <div class="flex-row">
-                <a href="#"><span class="pointer black">MY ORGANISATIONS</span></a>
+                <a href="#"><span class="pointer black">MY FOLLOWERS</span></a>
               </div>
               <div class="separator"></div>
               <div class="flex-row">
-                <a href="#"><span class="pointer black">MY APPS</span></a>
+                <a href="#"><span class="pointer black">MY FOLLOWING</span></a>
               </div>
               <div class="separator"></div>
-              <div class="flex-row">
-                <a href="#"><span class="pointer black">MY CLIENTS</span></a>
-              </div>
               <div class="separator"></div>
               <div class="flex-row faded">
                 <a href="#"><span class="pointer black">LOGOUT</span></a>
@@ -192,185 +190,42 @@
           </div>
     <div class="offset-md-4 col-md-8 c-profile-edit">
     <div class="card">
-        <h1 class="heading-u-red">
+        <h1 class="heading" style="color: #428bca; font-family: 'Roboto', sans-serif; font-size: 36px;">
             Edit Profile
         </h1>
 
         <form id="edit-form" enctype="multipart/form-data" method="POST">
             <input type="hidden" name="_csrf" value="">
-            <div class="c-changedp">
-                <div class="modal fade c-modal" id="change-dp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            
-            
-                            <p class="red">Choose from existing avatars</p>
-            
-                            <div class="row no-gutters">
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-1.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-2.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-3.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-4.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-5.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-6.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-7.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-8.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-9.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-10.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-11.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-12.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-13.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-14.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-15.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-16.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-17.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-18.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-19.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-20.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-21.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-22.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-23.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-24.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-25.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-26.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-27.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-28.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-29.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-30.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-31.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-32.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-33.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-34.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-35.svg">
-                                    </div>
-                                    <div class="col-2 images">
-                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-36.svg">
-                                    </div>
-            
-                            </div>
-            
-                            <p>OR</p>
-            
-                            <p class="red">Upload Image from your computer</p>
-            
-                            <input type="file" id="userpic" accept="image/jpeg, image/png" name="userpic">
-                            <input id="avatar-selector" type="hidden" name="avatarselect" value="">
-            
-                            <div class="footer row justify-content-end no-gutters">
-                                <div class="button">
-                                    <button id="btn-clear" type="button">RESET</button>
-                                </div>
-            
-                                <div class="button-solid">
-                                    <button type="button" data-dismiss="modal" data-target="#change-dp">SAVE CHANGES</button>
-                                </div>
-                            </div>
-            
-                        </div>
-                    </div>
-            
-                </div>
-            </div>            <div class="row justify-content-between align-items-center profile-row">
+                   <div class="row justify-content-between align-items-center profile-row">
                 <div class="round-img">
                         <img class="round-img user-pic" src="SecProfilePic.jpg">
                 </div>
 
-                <div class="btn btn-success">
+                <div class="btn btn-primary">
                     <button type="button" data-toggle="modal" data-target="#change-dp">CHANGE PROFILE IMAGE</button>
                 </div>
             </div>
 
-            
-
             <div class="attributes">
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">UserID</div>
-                    <input class="input-text col-9" type="text" id="userid" disabled value="XXXXX"/>
+                    <input style="padding-left: 1%;" class="input-text col-9" type="text" id="userid" disabled value="XXXXX"/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">Username</div>
-                    <input type="text" class="input-text col-9" id="username" disabled value="XXXXXXXXXX"/>
+                    <input style="padding-left: 1%;" type="text" class="input-text col-9" id="username" disabled value="XXXXXXXXXX"/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">Firstname</div>
-                    <input type="text" id="firstname" class="input-text col-9" name="firstname"
+                    <input style="padding-left: 1%;" type="text" id="firstname" class="input-text col-9" name="firstname"
                            value="John"/>
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">Lastname</div>
-                    <input class="input-text col-9" type="text" name="lastname" id="lastname"
+                    <input style="padding-left: 1%;" class="input-text col-9" type="text" name="lastname" id="lastname"
                            value="Doe"/>
                 </div>
 
@@ -388,8 +243,12 @@
                     </select>
                 </div>
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">EDUCATION</div>
+                    <input style="padding-left: 1%;" type="text" id="education" class="input-text col-9" name="education" placeholder="Enter Educational Background"/>
+                </div>
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">Email</div>
-                        <input type="text" id="email" name="email" class="input-text col-9" disabled
+                        <input style="padding-left: 1%;" type="text" id="email" name="email" class="input-text col-9" disabled
                                value="johnDoe@xmail.com"/>
                 </div>
 
@@ -1123,18 +982,6 @@
                 </div>
 
                 <div class="row no-gutters align-items-center justify-content-between detail-row">
-                    <div class="label-input col-2">Password</div>
-                    <input class="input-text col-9" type="password" name="password"
-                           placeholder="Enter Password (keep empty for unchanged)" id="password"/>
-                </div>
-
-                <div class="row no-gutters align-items-center justify-content-between detail-row">
-                    <div class="label-input col-2">Re-Enter</div>
-                    <input class="input-text col-9" type="password" name="repassword" placeholder="Re-Enter Password"
-                           id="repassword"/>
-                </div>
-
-                <div class="row no-gutters align-items-center justify-content-between detail-row">
                     <div class="label-input col-2">College</div>
                     <select name="collegeId" class="input-text col-9">
                                 <option class="dropdown-li" value="1">0---OTHER / NOT LISTED / NO COLLEGE ---0</option>
@@ -1356,44 +1203,12 @@
                     </select>
                 </div>
 
-                <div class="row no-gutters align-items-center justify-content-between detail-row">
-                    <div class="label-input col-2">Graduation Year</div>
-                    <select name="gradYear" class="input-text col-9" required>
-                                <option class="dropdown-li" value="2025">2025</option>
-                                <option class="dropdown-li" value="2024">2024</option>
-                                <option class="dropdown-li" value="2023" >2023</option>
-                                <option class="dropdown-li" value="2022">2022</option>
-                                <option class="dropdown-li" value="2021">2021</option>
-                                <option class="dropdown-li" value="2020">2020</option>
-                                <option class="dropdown-li" value="2019">2019</option>
-                                <option class="dropdown-li" value="2018">2018</option>
-                                <option class="dropdown-li" value="2017">2017</option>
-                                <option class="dropdown-li" value="2016">2016</option>
-                                <option class="dropdown-li" value="2015">2015</option>
-                                <option class="dropdown-li" value="2014">2014</option>
-                                <option class="dropdown-li" value="2013">2013</option>
-                                <option class="dropdown-li" value="2012">2012</option>
-                                <option class="dropdown-li" value="2011">2011</option>
-                                <option class="dropdown-li" value="2010">2010</option>
-                                <option class="dropdown-li" value="2009">2009</option>
-                                <option class="dropdown-li" value="2008">2008</option>
-                                <option class="dropdown-li" value="2007">2007</option>
-                                <option class="dropdown-li" value="2006">2006</option>
-                                <option class="dropdown-li" value="2005">2005</option>
-                                <option class="dropdown-li" value="2004">2004</option>
-                                <option class="dropdown-li" value="2003">2003</option>
-                                <option class="dropdown-li" value="2002">2002</option>
-                                <option class="dropdown-li" value="2001">2001</option>
-                                <option class="dropdown-li" value="2000">2000</option>
-                    </select>
-                </div>
-
                 <div class="flex-row justify-content-end button-div">
                     <div class="reset-button">
                         <button type="reset" onclick="Clear()">RESET</button>
                     </div>
-                    <div class="button-solid">
-                        <button type="submit" onclick="Saved()">SAVE CHANGES</button>
+                    <div class="btn btn-primary">
+                        <button type="submit" onclick="Saved()" >SAVE CHANGES</button>
                     </div>
                 </div>
             </div>
