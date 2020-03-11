@@ -42,15 +42,12 @@
         gtag('config', 'UA-83327907-12')
         gtag('set', {'user_id': XXXXX }) // Set the user ID using signed-in user_id.
     </script>
-
-    <link rel="icon" href="/img/favicon-16x16.png"  sizes="16x16">
-    <link rel="icon" href="/img/favicon-32x32.png"  sizes="32x32">
-    <link rel="icon" href="/img/favicon-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="/css/bootstrap-social.css">
     <link rel="stylesheet" href="https://unpkg.com/@coding-blocks/motley@0.3.43/dist/app.min.css">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
-<body>
+<body style="background-image: linear-gradient(#8a56ab,#d1bde0);">
 
 <header>
     <nav class="main-nav">
@@ -59,8 +56,8 @@
                 <i class="hamburger fas fa-bars"></i>
             </span>
             <span class="logo-parent">
-                <a class="logo-link" href="/">
-                    <img src="/img/account-logo.png" alt="online-logo" class="nav-logo pointer">
+                <a class="logo" href="/">
+                    <img src="logo.png" alt="online-logo" style="border-radius: 50%;" class="nav-logo pointer">
                 </a>
             </span>
         </div>
@@ -153,26 +150,6 @@
     
     
         </div>
-    
-        <div class="lower-half">
-            <a href="#">
-                <div class="para">
-                    CLASSROOM COURSES
-                </div>
-            </a>
-    
-            <a href="#">
-                <div class="para">
-                    ONLINE COURSES
-                </div>
-            </a>
-    
-            <a href="#">
-                <div class="para">
-                    HACKER BLOCKS
-                </div>
-            </a>
-        </div>
     </div></header>
 <div class="row c-arrangement">
         <div class="nav-info col-md-3">
@@ -182,7 +159,7 @@
                             <img class="round-img user-pic" src="SecProfilePic.jpg">
                     </div>
                     <div class="card">
-                            <p>Hi, Kartikeya</p>
+                            <p class="pointer black">Hi, UserName</p>
         
                     </div>
                 </div>
@@ -190,26 +167,26 @@
         
             <div>
               <div class="flex-row">
-                <a href="#"><span class="pointer red">MY PROFILE</span></a>
+                <a href="#"><span class="pointer black">MY PROFILE</span></a>
               </div>
               <div class="separator"></div>
               <div class="flex-row">
-                <a href="#"><span class="pointer ">MY ADDRESSES</span></a>
+                <a href="#"><span class="pointer black">MY ADDRESSES</span></a>
               </div>
               <div class="flex-row">
-                <a href="#"><span class="pointer ">MY ORGANISATIONS</span></a>
-              </div>
-              <div class="separator"></div>
-              <div class="flex-row">
-                <a href="#"><span class="pointer ">MY APPS</span></a>
+                <a href="#"><span class="pointer black">MY ORGANISATIONS</span></a>
               </div>
               <div class="separator"></div>
               <div class="flex-row">
-                <a href="#"><span class="pointer ">MY CLIENTS</span></a>
+                <a href="#"><span class="pointer black">MY APPS</span></a>
+              </div>
+              <div class="separator"></div>
+              <div class="flex-row">
+                <a href="#"><span class="pointer black">MY CLIENTS</span></a>
               </div>
               <div class="separator"></div>
               <div class="flex-row faded">
-                <a href="#"><span class="pointer">LOGOUT</span></a>
+                <a href="#"><span class="pointer black">LOGOUT</span></a>
               </div>
             </div>
           </div>
@@ -225,13 +202,7 @@
                 <div class="modal fade c-modal" id="change-dp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="row justify-content-between no-gutters">
-                                <div class="heading">
-                                    Change Profile Image
-                                </div>
-                                <span class="pointer" data-dismiss="modal" aria-hidden="true"><i class="fas fa-times"></i></span>
-            
-                            </div>
+                            
             
                             <p class="red">Choose from existing avatars</p>
             
@@ -373,7 +344,7 @@
                         <img class="round-img user-pic" src="SecProfilePic.jpg">
                 </div>
 
-                <div class="button-solid">
+                <div class="btn btn-success">
                     <button type="button" data-toggle="modal" data-target="#change-dp">CHANGE PROFILE IMAGE</button>
                 </div>
             </div>
@@ -1419,7 +1390,7 @@
 
                 <div class="flex-row justify-content-end button-div">
                     <div class="reset-button">
-                        <button type="reset">RESET</button>
+                        <button type="reset" onclick="Clear()">RESET</button>
                     </div>
                     <div class="button-solid">
                         <button type="submit" onclick="Saved()">SAVE CHANGES</button>
@@ -1435,6 +1406,10 @@
         function Saved()
         {
             window.alert("Your Data Has Been Saved");
+        }
+        function Clear()
+        {
+            window.alert("Are You Sure You Want To Clear The Entered Data ?");
         }
     </script>
 </body>
