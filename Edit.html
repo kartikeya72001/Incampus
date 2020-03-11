@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Coding Blocks User Account Management website. Create an account to enroll for Coding Blocks online courses">
+
+        <title>Coding Blocks Account</title>
+
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/152fef14b6.js"></script>
+    <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-TWLQ78S');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83327907-12"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []
+
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+
+        gtag('js', new Date())
+        gtag('config', 'UA-83327907-12')
+        gtag('set', {'user_id': 63154 }) // Set the user ID using signed-in user_id.
+    </script>
+
+    <link rel="icon" href="/img/favicon-16x16.png"  sizes="16x16">
+    <link rel="icon" href="/img/favicon-32x32.png"  sizes="32x32">
+    <link rel="icon" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="/css/bootstrap-social.css">
+    <link rel="stylesheet" href="https://unpkg.com/@coding-blocks/motley@0.3.43/dist/app.min.css">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <nav class="main-nav">
+        <div class="nav-left">
+            <span class="hamburger-parent">
+                <i class="hamburger fas fa-bars"></i>
+            </span>
+            <span class="logo-parent">
+                <a class="logo-link" href="/">
+                    <img src="/img/account-logo.png" alt="online-logo" class="nav-logo pointer">
+                </a>
+            </span>
+        </div>
+    
+    
+        <div class="nav-right">
+            <div class="dsp-none-sm">
+                <ul class="nav-list">
+                    <a href="#">
+                        <li class="nav-items pointer">
+                            HOME
+                        </li>
+                    </a>
+            
+                    <a href="#">
+                        <li class="nav-items pointer">
+                            EXPLORE
+                        </li>
+                    </a>
+            
+                    <a href="#">
+                        <li class="nav-items pointer">
+                            PROFILE
+                        </li>
+                    </a>
+                </ul>
+            </div>
+    
+                <div class="round-img">
+                    <img src="SecProfilePic.jpg" alt="profile-pic"> 
+                </div>
+    
+                <div class="card">
+                    <div class="top-offset"></div>
+                    <div class="nav-info">
+                        <div class="flex-row justify-content-end">
+                            <a href="#">
+                                <span class="pointer ">MY PROFILE</span>
+                            </a>
+                        </div>
+                        <div class="separator"></div>
+    
+                        <div class="flex-row justify-content-end">
+                            <a href="#">
+                                <span class="pointer ">MY ADDRESSES</span>
+                            </a>
+                        </div>
+                        <div class="separator"></div>
+    
+                        <div class="flex-row justify-content-end">
+                            <a href="#">
+                                <span class="pointer ">MY FOLLOWERS</span>
+                            </a>
+                        </div>
+                        <div class="separator"></div>
+    
+                        <div class="flex-row justify-content-end">
+                            <a href="#">
+                                <span class="pointer ">MY FOLLOWING</span>
+                            </a>
+                        </div>
+                        <div class="separator"></div>
+    
+                        <div class="flex-row justify-content-end faded">
+                            <a href="#">
+                                <span class="pointer">LOGOUT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    
+    
+    </nav>
+    
+    <div class="sidebar sidebar-none">
+        <i class="close fas fa-times fa-200px"></i>
+        <div class="upper-half">
+            <div class="round-img">
+                <img src="SecProfilePic.jpg" alt="profile-pic"> 
+            </div>
+            <p>
+                Hi, Username Goes here
+            </p>
+            <a href="#">
+                <div class="button-solid">
+                    <button>Logout</button>
+                </div>
+            </a>
+    
+    
+        </div>
+    
+        <div class="lower-half">
+            <a href="#">
+                <div class="para">
+                    CLASSROOM COURSES
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="para">
+                    ONLINE COURSES
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="para">
+                    HACKER BLOCKS
+                </div>
+            </a>
+        </div>
+    </div></header>
+<div class="row c-arrangement">
+        <div class="nav-info col-md-3">
+            <a href="#">
+                <div class="profile-pic">
+                    <div class="d-flex justify-content-center profile-container">
+                            <img class="round-img user-pic" src="SecProfilePic.jpg">
+                    </div>
+                    <div class="card">
+                            <p>Hi, Kartikeya</p>
+        
+                    </div>
+                </div>
+            </a>
+        
+            <div>
+              <div class="flex-row">
+                <a href="/users/me"><span class="pointer red">MY PROFILE</span></a>
+              </div>
+              <div class="separator"></div>
+              <div class="flex-row">
+                <a href="/address/"><span class="pointer ">MY ADDRESSES</span></a>
+              </div>
+              <div class="flex-row">
+                <a href="/users/me/organisations"><span class="pointer ">MY ORGANISATIONS</span></a>
+              </div>
+              <div class="separator"></div>
+              <div class="flex-row">
+                <a href="/apps"><span class="pointer ">MY APPS</span></a>
+              </div>
+              <div class="separator"></div>
+              <div class="flex-row">
+                <a href="/users/me/clients"><span class="pointer ">MY CLIENTS</span></a>
+              </div>
+              <div class="separator"></div>
+              <div class="flex-row faded">
+                <a href="/logout"><span class="pointer">LOGOUT</span></a>
+              </div>
+            </div>
+          </div>
+    <div class="offset-md-4 col-md-8 c-profile-edit">
+    <div class="card">
+        <h1 class="heading-u-red">
+            Edit Profile
+        </h1>
+
+        <form id="edit-form" enctype="multipart/form-data" method="POST">
+            <input type="hidden" name="_csrf" value="">
+            <div class="c-changedp">
+                <div class="modal fade c-modal" id="change-dp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="row justify-content-between no-gutters">
+                                <div class="heading">
+                                    Change Profile Image
+                                </div>
+                                <span class="pointer" data-dismiss="modal" aria-hidden="true"><i class="fas fa-times"></i></span>
+            
+                            </div>
+            
+                            <p class="red">Choose from existing avatars</p>
+            
+                            <div class="row no-gutters">
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-1.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-2.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-3.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-4.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-5.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-6.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-7.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-8.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-9.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-10.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-11.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-12.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-13.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-14.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-15.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-16.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-17.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-18.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-19.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-20.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-21.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-22.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-23.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-24.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-25.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-26.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-27.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-28.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-29.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-30.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-31.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-32.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-33.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-34.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-35.svg">
+                                    </div>
+                                    <div class="col-2 images">
+                                        <img class="avatar" src="https://minio.codingblocks.com/img/avatar-36.svg">
+                                    </div>
+            
+                            </div>
+            
+                            <p>OR</p>
+            
+                            <p class="red">Upload Image from your computer</p>
+            
+                            <input type="file" id="userpic" accept="image/jpeg, image/png" name="userpic">
+                            <input id="avatar-selector" type="hidden" name="avatarselect" value="">
+            
+                            <div class="footer row justify-content-end no-gutters">
+                                <div class="button">
+                                    <button id="btn-clear" type="button">RESET</button>
+                                </div>
+            
+                                <div class="button-solid">
+                                    <button type="button" data-dismiss="modal" data-target="#change-dp">SAVE CHANGES</button>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                </div>
+            </div>            <div class="row justify-content-between align-items-center profile-row">
+                <div class="round-img">
+                        <img class="round-img user-pic" src="https://lh3.googleusercontent.com/a-/AAuE7mC69MMtbQgWL2xUHXdtkt6mRaYVJDVe0qkDw4EPVw&#x3D;s50">
+                </div>
+
+                <div class="button-solid">
+                    <button type="button" data-toggle="modal" data-target="#change-dp">CHANGE PROFILE IMAGE</button>
+                </div>
+            </div>
+
+            
+
+            <div class="attributes">
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">UserID</div>
+                    <input class="input-text col-9" type="text" id="userid" disabled value="63154"/>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Username</div>
+                    <input type="text" class="input-text col-9" id="username" disabled value="kartikeya72001"/>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Firstname</div>
+                    <input type="text" id="firstname" class="input-text col-9" name="firstname"
+                           value="Kartikeya"/>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Lastname</div>
+                    <input class="input-text col-9" type="text" name="lastname" id="lastname"
+                           value="Agarwal"/>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Gender</div>
+                    <select class="col-9 input-text" name="gender" id="gender">
+                        <option value="MALE" 
+                                selected
+                        >MALE
+                        </option>
+                        <option value="FEMALE">FEMALE
+                        </option>
+                        <option value="UNDISCLOSED" >UNDISCLOSED
+                        </option>
+                    </select>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Your T-shirt Size</div>
+                    <select class="col-9 input-text" name="apparelGoodiesSize" id="apparelGoodiesSize">
+                        <option value="" >Choose your fit
+                        </option>
+                        <option value="S" >S - Small
+                        </option>
+                        <option value="M" >M - Medium
+                        </option>
+                        <option value="L" >L - Large
+                        </option>
+                        <option value="XL" >XL - Extra Large
+                        </option>
+                    </select>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Email</div>
+                        <input type="text" id="email" name="email" class="input-text col-9" disabled
+                               value="kartikeya72001@gmail.com"/>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Contact Number</div>
+                    <select name="dial_code" class="input-text col-3">
+                                <option class="dropdown-li" value="+91" selected>
+                                    India (+91)
+                                </option>
+                                <option class="dropdown-li" value="+93">
+                                    Afghanistan (+93)
+                                </option>
+                                <option class="dropdown-li" value="+355">
+                                    Albania (+355)
+                                </option>
+                                <option class="dropdown-li" value="+213">
+                                    Algeria (+213)
+                                </option>
+                                <option class="dropdown-li" value="+1684">
+                                    AmericanSamoa (+1684)
+                                </option>
+                                <option class="dropdown-li" value="+376">
+                                    Andorra (+376)
+                                </option>
+                                <option class="dropdown-li" value="+244">
+                                    Angola (+244)
+                                </option>
+                                <option class="dropdown-li" value="+1264">
+                                    Anguilla (+1264)
+                                </option>
+                                <option class="dropdown-li" value="+1268">
+                                    Antigua and Barbuda (+1268)
+                                </option>
+                                <option class="dropdown-li" value="+54">
+                                    Argentina (+54)
+                                </option>
+                                <option class="dropdown-li" value="+374">
+                                    Armenia (+374)
+                                </option>
+                                <option class="dropdown-li" value="+297">
+                                    Aruba (+297)
+                                </option>
+                                <option class="dropdown-li" value="+61">
+                                    Australia (+61)
+                                </option>
+                                <option class="dropdown-li" value="+43">
+                                    Austria (+43)
+                                </option>
+                                <option class="dropdown-li" value="+994">
+                                    Azerbaijan (+994)
+                                </option>
+                                <option class="dropdown-li" value="+1242">
+                                    Bahamas (+1242)
+                                </option>
+                                <option class="dropdown-li" value="+973">
+                                    Bahrain (+973)
+                                </option>
+                                <option class="dropdown-li" value="+880">
+                                    Bangladesh (+880)
+                                </option>
+                                <option class="dropdown-li" value="+1246">
+                                    Barbados (+1246)
+                                </option>
+                                <option class="dropdown-li" value="+375">
+                                    Belarus (+375)
+                                </option>
+                                <option class="dropdown-li" value="+32">
+                                    Belgium (+32)
+                                </option>
+                                <option class="dropdown-li" value="+501">
+                                    Belize (+501)
+                                </option>
+                                <option class="dropdown-li" value="+229">
+                                    Benin (+229)
+                                </option>
+                                <option class="dropdown-li" value="+1441">
+                                    Bermuda (+1441)
+                                </option>
+                                <option class="dropdown-li" value="+975">
+                                    Bhutan (+975)
+                                </option>
+                                <option class="dropdown-li" value="+387">
+                                    Bosnia and Herzegovina (+387)
+                                </option>
+                                <option class="dropdown-li" value="+267">
+                                    Botswana (+267)
+                                </option>
+                                <option class="dropdown-li" value="+55">
+                                    Brazil (+55)
+                                </option>
+                                <option class="dropdown-li" value="+246">
+                                    British Indian Ocean Territory (+246)
+                                </option>
+                                <option class="dropdown-li" value="+359">
+                                    Bulgaria (+359)
+                                </option>
+                                <option class="dropdown-li" value="+226">
+                                    Burkina Faso (+226)
+                                </option>
+                                <option class="dropdown-li" value="+257">
+                                    Burundi (+257)
+                                </option>
+                                <option class="dropdown-li" value="+855">
+                                    Cambodia (+855)
+                                </option>
+                                <option class="dropdown-li" value="+237">
+                                    Cameroon (+237)
+                                </option>
+                                <option class="dropdown-li" value="+1">
+                                    Canada (+1)
+                                </option>
+                                <option class="dropdown-li" value="+238">
+                                    Cape Verde (+238)
+                                </option>
+                                <option class="dropdown-li" value="+345">
+                                    Cayman Islands (+345)
+                                </option>
+                                <option class="dropdown-li" value="+236">
+                                    Central African Republic (+236)
+                                </option>
+                                <option class="dropdown-li" value="+235">
+                                    Chad (+235)
+                                </option>
+                                <option class="dropdown-li" value="+56">
+                                    Chile (+56)
+                                </option>
+                                <option class="dropdown-li" value="+86">
+                                    China (+86)
+                                </option>
+                                <option class="dropdown-li" value="+61">
+                                    Christmas Island (+61)
+                                </option>
+                                <option class="dropdown-li" value="+57">
+                                    Colombia (+57)
+                                </option>
+                                <option class="dropdown-li" value="+269">
+                                    Comoros (+269)
+                                </option>
+                                <option class="dropdown-li" value="+242">
+                                    Congo (+242)
+                                </option>
+                                <option class="dropdown-li" value="+682">
+                                    Cook Islands (+682)
+                                </option>
+                                <option class="dropdown-li" value="+506">
+                                    Costa Rica (+506)
+                                </option>
+                                <option class="dropdown-li" value="+385">
+                                    Croatia (+385)
+                                </option>
+                                <option class="dropdown-li" value="+53">
+                                    Cuba (+53)
+                                </option>
+                                <option class="dropdown-li" value="+537">
+                                    Cyprus (+537)
+                                </option>
+                                <option class="dropdown-li" value="+420">
+                                    Czech Republic (+420)
+                                </option>
+                                <option class="dropdown-li" value="+45">
+                                    Denmark (+45)
+                                </option>
+                                <option class="dropdown-li" value="+253">
+                                    Djibouti (+253)
+                                </option>
+                                <option class="dropdown-li" value="+1767">
+                                    Dominica (+1767)
+                                </option>
+                                <option class="dropdown-li" value="+1849">
+                                    Dominican Republic (+1849)
+                                </option>
+                                <option class="dropdown-li" value="+593">
+                                    Ecuador (+593)
+                                </option>
+                                <option class="dropdown-li" value="+20">
+                                    Egypt (+20)
+                                </option>
+                                <option class="dropdown-li" value="+503">
+                                    El Salvador (+503)
+                                </option>
+                                <option class="dropdown-li" value="+240">
+                                    Equatorial Guinea (+240)
+                                </option>
+                                <option class="dropdown-li" value="+291">
+                                    Eritrea (+291)
+                                </option>
+                                <option class="dropdown-li" value="+372">
+                                    Estonia (+372)
+                                </option>
+                                <option class="dropdown-li" value="+251">
+                                    Ethiopia (+251)
+                                </option>
+                                <option class="dropdown-li" value="+298">
+                                    Faroe Islands (+298)
+                                </option>
+                                <option class="dropdown-li" value="+679">
+                                    Fiji (+679)
+                                </option>
+                                <option class="dropdown-li" value="+358">
+                                    Finland (+358)
+                                </option>
+                                <option class="dropdown-li" value="+33">
+                                    France (+33)
+                                </option>
+                                <option class="dropdown-li" value="+594">
+                                    French Guiana (+594)
+                                </option>
+                                <option class="dropdown-li" value="+689">
+                                    French Polynesia (+689)
+                                </option>
+                                <option class="dropdown-li" value="+241">
+                                    Gabon (+241)
+                                </option>
+                                <option class="dropdown-li" value="+220">
+                                    Gambia (+220)
+                                </option>
+                                <option class="dropdown-li" value="+995">
+                                    Georgia (+995)
+                                </option>
+                                <option class="dropdown-li" value="+49">
+                                    Germany (+49)
+                                </option>
+                                <option class="dropdown-li" value="+233">
+                                    Ghana (+233)
+                                </option>
+                                <option class="dropdown-li" value="+350">
+                                    Gibraltar (+350)
+                                </option>
+                                <option class="dropdown-li" value="+30">
+                                    Greece (+30)
+                                </option>
+                                <option class="dropdown-li" value="+299">
+                                    Greenland (+299)
+                                </option>
+                                <option class="dropdown-li" value="+1473">
+                                    Grenada (+1473)
+                                </option>
+                                <option class="dropdown-li" value="+590">
+                                    Guadeloupe (+590)
+                                </option>
+                                <option class="dropdown-li" value="+1671">
+                                    Guam (+1671)
+                                </option>
+                                <option class="dropdown-li" value="+502">
+                                    Guatemala (+502)
+                                </option>
+                                <option class="dropdown-li" value="+224">
+                                    Guinea (+224)
+                                </option>
+                                <option class="dropdown-li" value="+245">
+                                    Guinea-Bissau (+245)
+                                </option>
+                                <option class="dropdown-li" value="+595">
+                                    Guyana (+595)
+                                </option>
+                                <option class="dropdown-li" value="+509">
+                                    Haiti (+509)
+                                </option>
+                                <option class="dropdown-li" value="+504">
+                                    Honduras (+504)
+                                </option>
+                                <option class="dropdown-li" value="+36">
+                                    Hungary (+36)
+                                </option>
+                                <option class="dropdown-li" value="+354">
+                                    Iceland (+354)
+                                </option>
+                                <option class="dropdown-li" value="+62">
+                                    Indonesia (+62)
+                                </option>
+                                <option class="dropdown-li" value="+964">
+                                    Iraq (+964)
+                                </option>
+                                <option class="dropdown-li" value="+353">
+                                    Ireland (+353)
+                                </option>
+                                <option class="dropdown-li" value="+972">
+                                    Israel (+972)
+                                </option>
+                                <option class="dropdown-li" value="+39">
+                                    Italy (+39)
+                                </option>
+                                <option class="dropdown-li" value="+1876">
+                                    Jamaica (+1876)
+                                </option>
+                                <option class="dropdown-li" value="+81">
+                                    Japan (+81)
+                                </option>
+                                <option class="dropdown-li" value="+962">
+                                    Jordan (+962)
+                                </option>
+                                <option class="dropdown-li" value="+77">
+                                    Kazakhstan (+77)
+                                </option>
+                                <option class="dropdown-li" value="+254">
+                                    Kenya (+254)
+                                </option>
+                                <option class="dropdown-li" value="+686">
+                                    Kiribati (+686)
+                                </option>
+                                <option class="dropdown-li" value="+965">
+                                    Kuwait (+965)
+                                </option>
+                                <option class="dropdown-li" value="+996">
+                                    Kyrgyzstan (+996)
+                                </option>
+                                <option class="dropdown-li" value="+371">
+                                    Latvia (+371)
+                                </option>
+                                <option class="dropdown-li" value="+961">
+                                    Lebanon (+961)
+                                </option>
+                                <option class="dropdown-li" value="+266">
+                                    Lesotho (+266)
+                                </option>
+                                <option class="dropdown-li" value="+231">
+                                    Liberia (+231)
+                                </option>
+                                <option class="dropdown-li" value="+423">
+                                    Liechtenstein (+423)
+                                </option>
+                                <option class="dropdown-li" value="+370">
+                                    Lithuania (+370)
+                                </option>
+                                <option class="dropdown-li" value="+352">
+                                    Luxembourg (+352)
+                                </option>
+                                <option class="dropdown-li" value="+261">
+                                    Madagascar (+261)
+                                </option>
+                                <option class="dropdown-li" value="+265">
+                                    Malawi (+265)
+                                </option>
+                                <option class="dropdown-li" value="+60">
+                                    Malaysia (+60)
+                                </option>
+                                <option class="dropdown-li" value="+960">
+                                    Maldives (+960)
+                                </option>
+                                <option class="dropdown-li" value="+223">
+                                    Mali (+223)
+                                </option>
+                                <option class="dropdown-li" value="+356">
+                                    Malta (+356)
+                                </option>
+                                <option class="dropdown-li" value="+692">
+                                    Marshall Islands (+692)
+                                </option>
+                                <option class="dropdown-li" value="+596">
+                                    Martinique (+596)
+                                </option>
+                                <option class="dropdown-li" value="+222">
+                                    Mauritania (+222)
+                                </option>
+                                <option class="dropdown-li" value="+230">
+                                    Mauritius (+230)
+                                </option>
+                                <option class="dropdown-li" value="+262">
+                                    Mayotte (+262)
+                                </option>
+                                <option class="dropdown-li" value="+52">
+                                    Mexico (+52)
+                                </option>
+                                <option class="dropdown-li" value="+377">
+                                    Monaco (+377)
+                                </option>
+                                <option class="dropdown-li" value="+976">
+                                    Mongolia (+976)
+                                </option>
+                                <option class="dropdown-li" value="+382">
+                                    Montenegro (+382)
+                                </option>
+                                <option class="dropdown-li" value="+1664">
+                                    Montserrat (+1664)
+                                </option>
+                                <option class="dropdown-li" value="+212">
+                                    Morocco (+212)
+                                </option>
+                                <option class="dropdown-li" value="+95">
+                                    Myanmar (+95)
+                                </option>
+                                <option class="dropdown-li" value="+264">
+                                    Namibia (+264)
+                                </option>
+                                <option class="dropdown-li" value="+674">
+                                    Nauru (+674)
+                                </option>
+                                <option class="dropdown-li" value="+977">
+                                    Nepal (+977)
+                                </option>
+                                <option class="dropdown-li" value="+31">
+                                    Netherlands (+31)
+                                </option>
+                                <option class="dropdown-li" value="+599">
+                                    Netherlands Antilles (+599)
+                                </option>
+                                <option class="dropdown-li" value="+687">
+                                    New Caledonia (+687)
+                                </option>
+                                <option class="dropdown-li" value="+64">
+                                    New Zealand (+64)
+                                </option>
+                                <option class="dropdown-li" value="+505">
+                                    Nicaragua (+505)
+                                </option>
+                                <option class="dropdown-li" value="+227">
+                                    Niger (+227)
+                                </option>
+                                <option class="dropdown-li" value="+234">
+                                    Nigeria (+234)
+                                </option>
+                                <option class="dropdown-li" value="+683">
+                                    Niue (+683)
+                                </option>
+                                <option class="dropdown-li" value="+672">
+                                    Norfolk Island (+672)
+                                </option>
+                                <option class="dropdown-li" value="+1670">
+                                    Northern Mariana Islands (+1670)
+                                </option>
+                                <option class="dropdown-li" value="+47">
+                                    Norway (+47)
+                                </option>
+                                <option class="dropdown-li" value="+968">
+                                    Oman (+968)
+                                </option>
+                                <option class="dropdown-li" value="+92">
+                                    Pakistan (+92)
+                                </option>
+                                <option class="dropdown-li" value="+680">
+                                    Palau (+680)
+                                </option>
+                                <option class="dropdown-li" value="+507">
+                                    Panama (+507)
+                                </option>
+                                <option class="dropdown-li" value="+675">
+                                    Papua New Guinea (+675)
+                                </option>
+                                <option class="dropdown-li" value="+595">
+                                    Paraguay (+595)
+                                </option>
+                                <option class="dropdown-li" value="+51">
+                                    Peru (+51)
+                                </option>
+                                <option class="dropdown-li" value="+63">
+                                    Philippines (+63)
+                                </option>
+                                <option class="dropdown-li" value="+48">
+                                    Poland (+48)
+                                </option>
+                                <option class="dropdown-li" value="+351">
+                                    Portugal (+351)
+                                </option>
+                                <option class="dropdown-li" value="+1939">
+                                    Puerto Rico (+1939)
+                                </option>
+                                <option class="dropdown-li" value="+974">
+                                    Qatar (+974)
+                                </option>
+                                <option class="dropdown-li" value="+40">
+                                    Romania (+40)
+                                </option>
+                                <option class="dropdown-li" value="+250">
+                                    Rwanda (+250)
+                                </option>
+                                <option class="dropdown-li" value="+685">
+                                    Samoa (+685)
+                                </option>
+                                <option class="dropdown-li" value="+378">
+                                    San Marino (+378)
+                                </option>
+                                <option class="dropdown-li" value="+966">
+                                    Saudi Arabia (+966)
+                                </option>
+                                <option class="dropdown-li" value="+221">
+                                    Senegal (+221)
+                                </option>
+                                <option class="dropdown-li" value="+381">
+                                    Serbia (+381)
+                                </option>
+                                <option class="dropdown-li" value="+248">
+                                    Seychelles (+248)
+                                </option>
+                                <option class="dropdown-li" value="+232">
+                                    Sierra Leone (+232)
+                                </option>
+                                <option class="dropdown-li" value="+65">
+                                    Singapore (+65)
+                                </option>
+                                <option class="dropdown-li" value="+421">
+                                    Slovakia (+421)
+                                </option>
+                                <option class="dropdown-li" value="+386">
+                                    Slovenia (+386)
+                                </option>
+                                <option class="dropdown-li" value="+677">
+                                    Solomon Islands (+677)
+                                </option>
+                                <option class="dropdown-li" value="+27">
+                                    South Africa (+27)
+                                </option>
+                                <option class="dropdown-li" value="+500">
+                                    South Georgia and the South Sandwich Islands (+500)
+                                </option>
+                                <option class="dropdown-li" value="+34">
+                                    Spain (+34)
+                                </option>
+                                <option class="dropdown-li" value="+94">
+                                    Sri Lanka (+94)
+                                </option>
+                                <option class="dropdown-li" value="+249">
+                                    Sudan (+249)
+                                </option>
+                                <option class="dropdown-li" value="+597">
+                                    Suriname (+597)
+                                </option>
+                                <option class="dropdown-li" value="+268">
+                                    Swaziland (+268)
+                                </option>
+                                <option class="dropdown-li" value="+46">
+                                    Sweden (+46)
+                                </option>
+                                <option class="dropdown-li" value="+41">
+                                    Switzerland (+41)
+                                </option>
+                                <option class="dropdown-li" value="+992">
+                                    Tajikistan (+992)
+                                </option>
+                                <option class="dropdown-li" value="+66">
+                                    Thailand (+66)
+                                </option>
+                                <option class="dropdown-li" value="+228">
+                                    Togo (+228)
+                                </option>
+                                <option class="dropdown-li" value="+690">
+                                    Tokelau (+690)
+                                </option>
+                                <option class="dropdown-li" value="+676">
+                                    Tonga (+676)
+                                </option>
+                                <option class="dropdown-li" value="+1868">
+                                    Trinidad and Tobago (+1868)
+                                </option>
+                                <option class="dropdown-li" value="+216">
+                                    Tunisia (+216)
+                                </option>
+                                <option class="dropdown-li" value="+90">
+                                    Turkey (+90)
+                                </option>
+                                <option class="dropdown-li" value="+993">
+                                    Turkmenistan (+993)
+                                </option>
+                                <option class="dropdown-li" value="+1649">
+                                    Turks and Caicos Islands (+1649)
+                                </option>
+                                <option class="dropdown-li" value="+688">
+                                    Tuvalu (+688)
+                                </option>
+                                <option class="dropdown-li" value="+256">
+                                    Uganda (+256)
+                                </option>
+                                <option class="dropdown-li" value="+380">
+                                    Ukraine (+380)
+                                </option>
+                                <option class="dropdown-li" value="+971">
+                                    United Arab Emirates (+971)
+                                </option>
+                                <option class="dropdown-li" value="+44">
+                                    United Kingdom (+44)
+                                </option>
+                                <option class="dropdown-li" value="+1">
+                                    United States (+1)
+                                </option>
+                                <option class="dropdown-li" value="+598">
+                                    Uruguay (+598)
+                                </option>
+                                <option class="dropdown-li" value="+998">
+                                    Uzbekistan (+998)
+                                </option>
+                                <option class="dropdown-li" value="+678">
+                                    Vanuatu (+678)
+                                </option>
+                                <option class="dropdown-li" value="+681">
+                                    Wallis and Futuna (+681)
+                                </option>
+                                <option class="dropdown-li" value="+967">
+                                    Yemen (+967)
+                                </option>
+                                <option class="dropdown-li" value="+260">
+                                    Zambia (+260)
+                                </option>
+                                <option class="dropdown-li" value="+263">
+                                    Zimbabwe (+263)
+                                </option>
+                                <option class="dropdown-li" value="+358">
+                                    land Islands (+358)
+                                </option>
+                                <option class="dropdown-li" value="+591">
+                                    Bolivia, Plurinational State of (+591)
+                                </option>
+                                <option class="dropdown-li" value="+673">
+                                    Brunei Darussalam (+673)
+                                </option>
+                                <option class="dropdown-li" value="+61">
+                                    Cocos (Keeling) Islands (+61)
+                                </option>
+                                <option class="dropdown-li" value="+243">
+                                    The Democratic Republic of Congo (+243)
+                                </option>
+                                <option class="dropdown-li" value="+225">
+                                    Cote d&#x27;Ivoire (Ivory Coast) (+225)
+                                </option>
+                                <option class="dropdown-li" value="+500">
+                                    Falkland Islands (Malvinas) (+500)
+                                </option>
+                                <option class="dropdown-li" value="+44">
+                                    Guernsey (+44)
+                                </option>
+                                <option class="dropdown-li" value="+379">
+                                    Holy See (Vatican City State) (+379)
+                                </option>
+                                <option class="dropdown-li" value="+852">
+                                    Hong Kong (+852)
+                                </option>
+                                <option class="dropdown-li" value="+98">
+                                    Islamic Republic of Iran (+98)
+                                </option>
+                                <option class="dropdown-li" value="+44">
+                                    Isle of Man (+44)
+                                </option>
+                                <option class="dropdown-li" value="+44">
+                                    Jersey (+44)
+                                </option>
+                                <option class="dropdown-li" value="+850">
+                                    Democratic People&#x27;s Republic of Korea (+850)
+                                </option>
+                                <option class="dropdown-li" value="+82">
+                                    Republic of Korea (+82)
+                                </option>
+                                <option class="dropdown-li" value="+856">
+                                    Lao People&#x27;s Democratic Republic (+856)
+                                </option>
+                                <option class="dropdown-li" value="+218">
+                                    Libyan Arab Jamahiriya (+218)
+                                </option>
+                                <option class="dropdown-li" value="+853">
+                                    Macao (+853)
+                                </option>
+                                <option class="dropdown-li" value="+389">
+                                    Macedonia (+389)
+                                </option>
+                                <option class="dropdown-li" value="+691">
+                                    Micronesia, Federated States of (+691)
+                                </option>
+                                <option class="dropdown-li" value="+373">
+                                    Republic of Maldova (+373)
+                                </option>
+                                <option class="dropdown-li" value="+258">
+                                    Mozambique (+258)
+                                </option>
+                                <option class="dropdown-li" value="+970">
+                                    Palestinian Territory, Occupied (+970)
+                                </option>
+                                <option class="dropdown-li" value="+872">
+                                    Pitcairn (+872)
+                                </option>
+                                <option class="dropdown-li" value="+262">
+                                    Réunion (+262)
+                                </option>
+                                <option class="dropdown-li" value="+7">
+                                    Russia (+7)
+                                </option>
+                                <option class="dropdown-li" value="+590">
+                                    Saint Barthélemy (+590)
+                                </option>
+                                <option class="dropdown-li" value="+290">
+                                    Saint Helena, Ascension and Tristan Da Cunha (+290)
+                                </option>
+                                <option class="dropdown-li" value="+1869">
+                                    Saint Kitts and Nevis (+1869)
+                                </option>
+                                <option class="dropdown-li" value="+1758">
+                                    Saint Lucia (+1758)
+                                </option>
+                                <option class="dropdown-li" value="+590">
+                                    Saint Martin (+590)
+                                </option>
+                                <option class="dropdown-li" value="+508">
+                                    Saint Pierre and Miquelon (+508)
+                                </option>
+                                <option class="dropdown-li" value="+1784">
+                                    Saint Vincent and the Grenadines (+1784)
+                                </option>
+                                <option class="dropdown-li" value="+239">
+                                    Sao Tome and Principe (+239)
+                                </option>
+                                <option class="dropdown-li" value="+252">
+                                    Somalia (+252)
+                                </option>
+                                <option class="dropdown-li" value="+47">
+                                    Svalbard and Jan Mayen (+47)
+                                </option>
+                                <option class="dropdown-li" value="+963">
+                                    Syrian Arab Republic (+963)
+                                </option>
+                                <option class="dropdown-li" value="+886">
+                                    Taiwan, Province of China (+886)
+                                </option>
+                                <option class="dropdown-li" value="+255">
+                                    Tanzania, United Republic of (+255)
+                                </option>
+                                <option class="dropdown-li" value="+670">
+                                    Timor-Leste (+670)
+                                </option>
+                                <option class="dropdown-li" value="+58">
+                                    Venezuela, Bolivarian Republic of (+58)
+                                </option>
+                                <option class="dropdown-li" value="+84">
+                                    Viet Nam (+84)
+                                </option>
+                                <option class="dropdown-li" value="+1284">
+                                    Virgin Islands, British (+1284)
+                                </option>
+                                <option class="dropdown-li" value="+1340">
+                                    Virgin Islands, U.S. (+1340)
+                                </option>
+                    </select>
+
+                    <input class="input-text col-5" type="text" name="mobile_number" id="mobile_number"
+                           value="9718502020"/>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Password</div>
+                    <input class="input-text col-9" type="password" name="password"
+                           placeholder="Enter Password (keep empty for unchanged)" id="password"/>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Re-Enter</div>
+                    <input class="input-text col-9" type="password" name="repassword" placeholder="Re-Enter Password"
+                           id="repassword"/>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">College</div>
+                    <select name="collegeId" class="input-text col-9">
+                                <option class="dropdown-li" value="1">0---OTHER / NOT LISTED / NO COLLEGE ---0</option>
+                                <option class="dropdown-li" value="106">ABES Engineering College, New Delhi</option>
+                                <option class="dropdown-li" value="107">ABES IT, New Delhi</option>
+                                <option class="dropdown-li" value="108">ABV-IIITM, Gwalior</option>
+                                <option class="dropdown-li" value="109">Accurate Institute of Management and Technology, Uttar Pradesh</option>
+                                <option class="dropdown-li" value="110">ACEIT, Jaipur</option>
+                                <option class="dropdown-li" value="111">Ambedkar Institute of Advanced Communication Technologies and Research, New Delhi</option>
+                                <option class="dropdown-li" value="2">Amity School Of Engineering &amp; Technology (Noida)</option>
+                                <option class="dropdown-li" value="174">Amity University (Noida)</option>
+                                <option class="dropdown-li" value="112">Ansal University, Gurugram</option>
+                                <option class="dropdown-li" value="3">Army Institute Of Technology (Pune)</option>
+                                <option class="dropdown-li" value="4">Asia Pacific Institute of Information Technology (APIIT SD) (Panipat)</option>
+                                <option class="dropdown-li" value="113">Atma Ram Sanatan Dharma College, Delhi</option>
+                                <option class="dropdown-li" value="114">Banasthali Vidyapeeth, Rajasthan</option>
+                                <option class="dropdown-li" value="9">Bannari Amman Institute Of Technology (Erode)</option>
+                                <option class="dropdown-li" value="115">Bhagwan Parshuram Institute of Technology, Delhi</option>
+                                <option class="dropdown-li" value="103">Bharati Vidyapeeth College of Engineering, New Delhi (Delhi)</option>
+                                <option class="dropdown-li" value="104">Bharati Vidyapeeth Institute of Computer Applications and Management (BVICAM), New Delhi (Delhi)</option>
+                                <option class="dropdown-li" value="10">Bharati Vidyapeeth University College Of Engineering (Pune)</option>
+                                <option class="dropdown-li" value="118">Birla Institute of Technology and Science, Pilani (Dubai Campus)</option>
+                                <option class="dropdown-li" value="116">Birla Institute of Technology and Science, Pilani (Goa Campus)</option>
+                                <option class="dropdown-li" value="117">Birla Institute of Technology and Science, Pilani (Hyderabad Campus)</option>
+                                <option class="dropdown-li" value="12">Birla Institute Of Technology (Ranchi)</option>
+                                <option class="dropdown-li" value="11">Birla Institute Of Technology &amp; Science (Pilani)</option>
+                                <option class="dropdown-li" value="5">B.I.T. Sindri (Dhanbad)</option>
+                                <option class="dropdown-li" value="119">B. M. Institute Of Engineering &amp; Technology, Delhi</option>
+                                <option class="dropdown-li" value="6">BMS College Of Engineering (Bangalore)</option>
+                                <option class="dropdown-li" value="7">BMS Institute Of Technology &amp; Management (Bangalore)</option>
+                                <option class="dropdown-li" value="8">BRACT&#x27;S Vishwakarma Institute of Information Technology (Pune)</option>
+                                <option class="dropdown-li" value="121">CBS Group of Institution, Delhi</option>
+                                <option class="dropdown-li" value="120">C-DAC NOIDA (GGSIPU)</option>
+                                <option class="dropdown-li" value="14">Chaitanya Bharathi Institute Of Technology (Hyderabad)</option>
+                                <option class="dropdown-li" value="122">Chandigarh University</option>
+                                <option class="dropdown-li" value="176">Chitkara University</option>
+                                <option class="dropdown-li" value="123">Cluster Innovation Centre</option>
+                                <option class="dropdown-li" value="15">College Of Engineering, Guindy (Chennai)</option>
+                                <option class="dropdown-li" value="16">College Of Engineering, Pune (Pune)</option>
+                                <option class="dropdown-li" value="17">Cummins College of Engineering for Women (Pune)</option>
+                                <option class="dropdown-li" value="13">CVR College Of Engineering (Hyderabad)</option>
+                                <option class="dropdown-li" value="124">Deenbandhu Chhotu Ram University of Science and Technology</option>
+                                <option class="dropdown-li" value="18">Delhi Technological University (New-Delhi)</option>
+                                <option class="dropdown-li" value="127">Delhi University</option>
+                                <option class="dropdown-li" value="175">Dhirubhai Ambani Institute of Information and Communication Technology (DA-IICT)</option>
+                                <option class="dropdown-li" value="125">DIT University</option>
+                                <option class="dropdown-li" value="126">Dr. Akhilesh Das Gupta Institute of Technology &amp; Management</option>
+                                <option class="dropdown-li" value="19">Dwarkadas J. Sanghvi College Of Engineering (Mumbai)</option>
+                                <option class="dropdown-li" value="20">Faculty Of Engineering, DIT University (Dehradun)</option>
+                                <option class="dropdown-li" value="21">Galgotias College Of Engineering And Technology (Noida)</option>
+                                <option class="dropdown-li" value="173">Ganeshi Lal Aggarwal University (GLA)</option>
+                                <option class="dropdown-li" value="22">Ganeshi Lal Bajaj Institute Of Technology &amp; Management (Noida)</option>
+                                <option class="dropdown-li" value="128">Gautam Budh University, Noida</option>
+                                <option class="dropdown-li" value="129">GB Pant Engineering College, Delhi</option>
+                                <option class="dropdown-li" value="23">Government College Of Engineering (Amravati)</option>
+                                <option class="dropdown-li" value="24">Government College Of Engineering (Karad)</option>
+                                <option class="dropdown-li" value="25">Govt. Model Engineering College (Cochin)</option>
+                                <option class="dropdown-li" value="177">Graphic Era University</option>
+                                <option class="dropdown-li" value="26">Guru Nanak Dev Engineering College (Ludhiana)</option>
+                                <option class="dropdown-li" value="130">Guru Nanak Dev Institute of Technology, Rohini</option>
+                                <option class="dropdown-li" value="102">Guru Nanak Dev University, Amritsar (Punjab)</option>
+                                <option class="dropdown-li" value="131">Guru Teg Bahadur Institute of Technology (GTBIT), New Delhi</option>
+                                <option class="dropdown-li" value="132">HBTU, Lucknow</option>
+                                <option class="dropdown-li" value="133">HMRITM, New Delhi</option>
+                                <option class="dropdown-li" value="27">IES College Of Technology (Bhopal)</option>
+                                <option class="dropdown-li" value="135">IGNOU - The Peoples University, New Delhi</option>
+                                <option class="dropdown-li" value="28">IIIT, Allahabad (Allahabad)</option>
+                                <option class="dropdown-li" value="136">IIIT, Bhubaneshwar</option>
+                                <option class="dropdown-li" value="29">IIIT, Hyderabad (Hyderabad)</option>
+                                <option class="dropdown-li" value="138">IIIT, Kota</option>
+                                <option class="dropdown-li" value="137">IIMT, Uttar Pradesh</option>
+                                <option class="dropdown-li" value="30">IIT, Bombay (Mumbai)</option>
+                                <option class="dropdown-li" value="31">IIT, Delhi (Delhi)</option>
+                                <option class="dropdown-li" value="32">IIT, Kanpur (Kanpur)</option>
+                                <option class="dropdown-li" value="33">IIT, Kharagpur (Kharagpur)</option>
+                                <option class="dropdown-li" value="140">IIT, Patna</option>
+                                <option class="dropdown-li" value="139">IIT, Roorkee</option>
+                                <option class="dropdown-li" value="34">IMS Engineering College (Ghaziabad)</option>
+                                <option class="dropdown-li" value="141">Inderprastha Engineering College, Ghaziabad</option>
+                                <option class="dropdown-li" value="35">Indian Institute Of Technology (Indian School Of Mines), Dhanbad (Dhanbad)</option>
+                                <option class="dropdown-li" value="134">Indira Gandhi Delhi Technical University for Women(IGDTUW), New Delhi</option>
+                                <option class="dropdown-li" value="36">Indraprastha Institute Of Information Technology Delhi (New Delhi)</option>
+                                <option class="dropdown-li" value="37">Institute Of Engineering &amp; Technology, J.K.Lakshmipat University (Jaipur)</option>
+                                <option class="dropdown-li" value="38">Institute Of Technology (Ahmedabad)</option>
+                                <option class="dropdown-li" value="142">Jagan Institute of Management Studies, Rohini</option>
+                                <option class="dropdown-li" value="42">Jaipur Engineering College And Research Center (Jaipur)</option>
+                                <option class="dropdown-li" value="143">Jamia Hamdard University</option>
+                                <option class="dropdown-li" value="144">Jamia Milia Islamia</option>
+                                <option class="dropdown-li" value="43">Jawaharlal Nehru National College Of Engineering (Shimoga)</option>
+                                <option class="dropdown-li" value="145">Jaypee Institute Of Information Technology, Noida</option>
+                                <option class="dropdown-li" value="39">J.B. Institute Of Technology (Dehradun)</option>
+                                <option class="dropdown-li" value="40">JIS College Of Engineering (Kalyani, West Bengal)</option>
+                                <option class="dropdown-li" value="41">JSS Academy Of Technical Education (Bangalore)</option>
+                                <option class="dropdown-li" value="146">JSS Academy of Technical Education (Noida)</option>
+                                <option class="dropdown-li" value="148">Kasturba Institute Of Technology, Pitampura, New Delhi</option>
+                                <option class="dropdown-li" value="46">KIET Group Of Institutions (Ghaziabad)</option>
+                                <option class="dropdown-li" value="149">KIIT College of Engineering </option>
+                                <option class="dropdown-li" value="47">KLE Dr M.S Sheshgiri College Of Engineering And Technology (Belgaum)</option>
+                                <option class="dropdown-li" value="48">KLS Gogte Institute Of Technology (Belagavi)</option>
+                                <option class="dropdown-li" value="44">K L University (Guntur)</option>
+                                <option class="dropdown-li" value="49">Kongu Engineering College (Erode)</option>
+                                <option class="dropdown-li" value="147">K R Mangalam University, Greater Noida</option>
+                                <option class="dropdown-li" value="45">K.S.R. College Of Enginnering (Thiruchengode)</option>
+                                <option class="dropdown-li" value="50">Kuppam Engineering College (Kuppam)</option>
+                                <option class="dropdown-li" value="51">Lakshmi Narain College Of Technology (Bhopal)</option>
+                                <option class="dropdown-li" value="170">Lal Bahadur Shastri Institute of Management (LBSIM)</option>
+                                <option class="dropdown-li" value="105">LNM Institute of Information Technology, (LNMIIT), Rajasthan</option>
+                                <option class="dropdown-li" value="52">Lovely Professional University (Phagwara)</option>
+                                <option class="dropdown-li" value="57">Madhav Institute of Technology &amp; Science (Gwalior)</option>
+                                <option class="dropdown-li" value="150">Maharaja Agrasen College of Engineering</option>
+                                <option class="dropdown-li" value="151">Maharaja Agresen Institute Of Technology</option>
+                                <option class="dropdown-li" value="152">Maharaja Surajmal Institute of Technology</option>
+                                <option class="dropdown-li" value="58">Maharashtra Institute Of Technology (Aurangabad)</option>
+                                <option class="dropdown-li" value="59">Malla Reddy College of Engineering &amp; Technology (Secunderabd)</option>
+                                <option class="dropdown-li" value="153">Manav Rachna College of Engineering</option>
+                                <option class="dropdown-li" value="60">Manipal Institue Of Technology (Manipal)</option>
+                                <option class="dropdown-li" value="154">Mata Sundri College for Women </option>
+                                <option class="dropdown-li" value="61">Mepco Schlenk Engineering College (Sivakasi)</option>
+                                <option class="dropdown-li" value="155">MERI, New Delhi</option>
+                                <option class="dropdown-li" value="56">MIT College Of Engineering (Pune)</option>
+                                <option class="dropdown-li" value="54">M.S. Engineering College (Bangalore)</option>
+                                <option class="dropdown-li" value="55">M.S. Ramaiah Institute Of Technology (Bangalore)</option>
+                                <option class="dropdown-li" value="62">Muffakham Jah College Of Engineering And Technology (Hyderabad)</option>
+                                <option class="dropdown-li" value="53">M V J College Of Engineering (Bangalore)</option>
+                                <option class="dropdown-li" value="64">National Institute Of Science &amp; Technology (Berhampur)</option>
+                                <option class="dropdown-li" value="159">National Institute of Technology, Delhi</option>
+                                <option class="dropdown-li" value="180">National Institute of Technology, Goa</option>
+                                <option class="dropdown-li" value="156">National Institute of Technology, Kurukshetra</option>
+                                <option class="dropdown-li" value="158">National Institute of Technology, Uttarakhand</option>
+                                <option class="dropdown-li" value="65" selected>Netaji Subhas Institute Of Technology (New Delhi)</option>
+                                <option class="dropdown-li" value="63">NIT, Karnataka (Mangalore)</option>
+                                <option class="dropdown-li" value="172">Noida Institute of Engineering and Technology (NIET)</option>
+                                <option class="dropdown-li" value="162">Panipat Institute of Engineering &amp; Technology</option>
+                                <option class="dropdown-li" value="161">PEC, Chandigarh</option>
+                                <option class="dropdown-li" value="66">P.E.S. College Of Engineering (Mandya)</option>
+                                <option class="dropdown-li" value="67">PES University (Bangalore)</option>
+                                <option class="dropdown-li" value="69">Pimpri Chinchwad College Of Engineering (Pune)</option>
+                                <option class="dropdown-li" value="68">PSG College of Technology (Coimbatore)</option>
+                                <option class="dropdown-li" value="181">Punjab Technical University, Kapurthala, Punjab</option>
+                                <option class="dropdown-li" value="72">Rajagiri School Of Engineering &amp; Technology (Ernakulam)</option>
+                                <option class="dropdown-li" value="73">Rajarambapu Institute Of Technology (Sangli)</option>
+                                <option class="dropdown-li" value="163">Raj Kumar Goel Institute of Technology(RKGIT), Ghaziabad</option>
+                                <option class="dropdown-li" value="70">R.M.D. Engineering College (Thiruvallur)</option>
+                                <option class="dropdown-li" value="71">R.M.K. Engineering College (Kavaripettai)</option>
+                                <option class="dropdown-li" value="74">Rungta College Of Engineering And Technology (Bhilai)</option>
+                                <option class="dropdown-li" value="75">S.A. Engineering College (Chennai)</option>
+                                <option class="dropdown-li" value="80">Sanjivani Rural Education Society&#x27;s College Of Engineering (Ahmednagar)</option>
+                                <option class="dropdown-li" value="179">Sathyabama Institute of Science and Technology</option>
+                                <option class="dropdown-li" value="76">SCMS School Of Engineering &amp; Technology (Ernakulam)</option>
+                                <option class="dropdown-li" value="77">SDM College Of Engineering &amp; Technology (Dharwad)</option>
+                                <option class="dropdown-li" value="164">Shaheed Rajguru College of Applied Sciences for Women, Uttar Pradesh</option>
+                                <option class="dropdown-li" value="160">Shiv Nadar University</option>
+                                <option class="dropdown-li" value="81">Shri Ramdeobaba College Of Engineering And Management (Nagpur)</option>
+                                <option class="dropdown-li" value="82">Shri Shankaracharya Technical Campus Bhilai (Bhilai)</option>
+                                <option class="dropdown-li" value="83">Shri Vishnu Engineering College For Women (Bhimavaram)</option>
+                                <option class="dropdown-li" value="84">Sikkim Manipal Institute Of Technology (Sikkim)</option>
+                                <option class="dropdown-li" value="85">Sir M Visvesvaraya Institute Of Technology (Bangalore)</option>
+                                <option class="dropdown-li" value="86">Sri Sairam College of Engineering (Bangalore)</option>
+                                <option class="dropdown-li" value="87">Sri Sairam Engineering College (Chennai)</option>
+                                <option class="dropdown-li" value="88">Sri Sivasubramaniya Nadar College of Engineering (Kalavakkam)</option>
+                                <option class="dropdown-li" value="78">SRM Engineering College (Chennai)</option>
+                                <option class="dropdown-li" value="79">SVKM&#x27;s NMIMS-Mukesh Patel School Of Technology Management &amp; Engineering (Mumbai)</option>
+                                <option class="dropdown-li" value="89">Symbiosis Institute Of Technology (Pune)</option>
+                                <option class="dropdown-li" value="171">Thapar Institute of Engineering and Technology</option>
+                                <option class="dropdown-li" value="90">Thapar University (Patiala)</option>
+                                <option class="dropdown-li" value="91">The National Institute Of Engineering (Mysore)</option>
+                                <option class="dropdown-li" value="92">The Northcap University (Gurgaon)</option>
+                                <option class="dropdown-li" value="93">Thiagarajar College Of Engineering (Madurai)</option>
+                                <option class="dropdown-li" value="165">United College of Engineering and Management, Allahabad</option>
+                                <option class="dropdown-li" value="94">University College Of Engineering (Hyderabad)</option>
+                                <option class="dropdown-li" value="96">University Institute Of Engineering, Chandigarh University (Chandigarh)</option>
+                                <option class="dropdown-li" value="95">University Institute Of Engineering &amp; Technology, Panjab University (Chandigarh)</option>
+                                <option class="dropdown-li" value="166">University of Hyderabad, Hyderabad</option>
+                                <option class="dropdown-li" value="168"> University School of Information, Communication and Technology (USICT)</option>
+                                <option class="dropdown-li" value="167">UPES, Dehradun</option>
+                                <option class="dropdown-li" value="98">Veltech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Chennai)</option>
+                                <option class="dropdown-li" value="99">Vishwakarma Institute of Technology (Pune)</option>
+                                <option class="dropdown-li" value="100">Visvesvaraya National Institute Of Technology (Nagpur)</option>
+                                <option class="dropdown-li" value="97">VIT University (Vellore)</option>
+                                <option class="dropdown-li" value="157">Vivekananda Institute of Professional Studies</option>
+                                <option class="dropdown-li" value="169">YMCA University of Science and Technology, Haryana</option>
+                                <option class="dropdown-li" value="101">Zakir Husain College Of Engineering &amp; Technology, Aligarh (Aligarh)</option>
+                    </select>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Branch</div>
+                    <select name="branchId" class="input-text col-9">
+                                <option class="dropdown-li" value="1">---OTHER / NOT LISTED ---</option>
+                                <option class="dropdown-li" value="2">(B.Tech/BE) Computers / IT / Software</option>
+                                <option class="dropdown-li" value="3">(B.Tech/BE) Electrical / Electronics</option>
+                                <option class="dropdown-li" value="4">(B.Tech/BE) Mechanical / Automobile / Aeronautical</option>
+                                <option class="dropdown-li" value="5">(B.Tech/BE) Production / Manufacturing</option>
+                                <option class="dropdown-li" value="6">(B.Tech/BE) Civil</option>
+                                <option class="dropdown-li" value="7">(B.Tech/BE) Chemical / Petroleum / Textile</option>
+                                <option class="dropdown-li" value="8">(B.Tech/BE) BioTech / Environmental</option>
+                                <option class="dropdown-li" value="9">(B.Tech/BE) Others</option>
+                                <option class="dropdown-li" value="10" selected>(M.Tech/ME) Computers / IT / Software</option>
+                                <option class="dropdown-li" value="11">(M.Tech/ME) Electrical / Electronics</option>
+                                <option class="dropdown-li" value="12">(M.Tech/ME) Mechanical / Automobile / Aeronautical</option>
+                                <option class="dropdown-li" value="13">(M.Tech/ME) Production / Manufacturing</option>
+                                <option class="dropdown-li" value="14">(M.Tech/ME) Civil</option>
+                                <option class="dropdown-li" value="15">(M.Tech/ME) Chemical / Petroleum / Textile</option>
+                                <option class="dropdown-li" value="16">(M.Tech/ME) BioTech / Environmental</option>
+                                <option class="dropdown-li" value="17">(M.Tech/ME) Others</option>
+                                <option class="dropdown-li" value="18">(BCA)</option>
+                                <option class="dropdown-li" value="19">(MCA)</option>
+                                <option class="dropdown-li" value="20">(B.Sc/BS) Physics or related</option>
+                                <option class="dropdown-li" value="21">(B.Sc/BS) Chemistry or related</option>
+                                <option class="dropdown-li" value="22">(B.Sc/BS) Maths or related</option>
+                                <option class="dropdown-li" value="23">(M.Sc/MS) Physics or related</option>
+                                <option class="dropdown-li" value="24">(M.Sc/MS) Chemistry or related</option>
+                                <option class="dropdown-li" value="25">(M.Sc/MS) Maths or related</option>
+                                <option class="dropdown-li" value="26">(B.Com/B.Sc) Economics / Finance</option>
+                                <option class="dropdown-li" value="27">(M.Com/M.Sc) Economics / Finance</option>
+                                <option class="dropdown-li" value="28">(BA)</option>
+                                <option class="dropdown-li" value="29">(MA)</option>
+                                <option class="dropdown-li" value="30">(Ph.D / M.Phil / Research)</option>
+                    </select>
+                </div>
+
+                <div class="row no-gutters align-items-center justify-content-between detail-row">
+                    <div class="label-input col-2">Graduation Year</div>
+                    <select name="gradYear" class="input-text col-9" required>
+                                <option class="dropdown-li" value="2025">2025</option>
+                                <option class="dropdown-li" value="2024">2024</option>
+                                <option class="dropdown-li" value="2023" selected>2023</option>
+                                <option class="dropdown-li" value="2022">2022</option>
+                                <option class="dropdown-li" value="2021">2021</option>
+                                <option class="dropdown-li" value="2020">2020</option>
+                                <option class="dropdown-li" value="2019">2019</option>
+                                <option class="dropdown-li" value="2018">2018</option>
+                                <option class="dropdown-li" value="2017">2017</option>
+                                <option class="dropdown-li" value="2016">2016</option>
+                                <option class="dropdown-li" value="2015">2015</option>
+                                <option class="dropdown-li" value="2014">2014</option>
+                                <option class="dropdown-li" value="2013">2013</option>
+                                <option class="dropdown-li" value="2012">2012</option>
+                                <option class="dropdown-li" value="2011">2011</option>
+                                <option class="dropdown-li" value="2010">2010</option>
+                                <option class="dropdown-li" value="2009">2009</option>
+                                <option class="dropdown-li" value="2008">2008</option>
+                                <option class="dropdown-li" value="2007">2007</option>
+                                <option class="dropdown-li" value="2006">2006</option>
+                                <option class="dropdown-li" value="2005">2005</option>
+                                <option class="dropdown-li" value="2004">2004</option>
+                                <option class="dropdown-li" value="2003">2003</option>
+                                <option class="dropdown-li" value="2002">2002</option>
+                                <option class="dropdown-li" value="2001">2001</option>
+                                <option class="dropdown-li" value="2000">2000</option>
+                    </select>
+                </div>
+
+                <div class="flex-row justify-content-end button-div">
+                    <div class="reset-button">
+                        <button type="reset">RESET</button>
+                    </div>
+                    <div class="button-solid">
+                        <button type="submit">SAVE CHANGES</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
