@@ -7,36 +7,15 @@
         <link rel="stylesheet" type="text/css" href="signup.css">
         <title>Login-InCampus</title>
         <style>
-            .fa {
-                  padding: 2%;
-                  font-size: 16px;
-                  height: 1rem;
-                  width: 1rem;
-                  text-align: center;
-                  text-decoration: none;
-                  margin: 5px 2px;
-                  border: 1px solid black;
-                  border-radius: 50%;
-                }
-
-                .fa:hover {
-                    opacity: 0.8;
-                }
-
-                .fa-facebook {
-                  background: #3B5998;
-                  color: white;
-                }
-                .fa-linkedin {
-                  background: #007bb5;
-                  color: white;
-                }
             .si{
                 float: left;
+                padding-left: 2%;
             }
         </style>
     </head>
     <body style="margin:0px; padding: 0px;">
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=207134280594685&autoLogAppEvents=1"></script>
         <canvas id="c"></canvas>
         <div class="outer">
             <div class="middle">
@@ -45,9 +24,7 @@
                     <div id="background"></div>
                     <div class="part" id="signin">
                         <p id="head">Sign in</p>
-                        <a href="#" class="fa fa-facebook"></a>
-                        <div class="g-signin2 si"></div>
-                        <a href="#" class="fa fa-linkedin"></a>
+                        <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>                        <div class="g-signin2 si" style="border-radius: 50%;"></div>
                         <p>or use your account</p>
                         <form>
                             <input type="email" placeholder="Email" class="email" name = "email">
@@ -70,9 +47,7 @@
                     </div>
                     <div class="part" id="signup">
                         <p id="create">Create Account</p>
-                        <a href="#" class="fa fa-facebook social"></a>
-                        <div class="g-signin2 si"></div>
-                        <a href="#" class="fa fa-linkedin social"></a>
+                        <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>                        <div class="g-signin2 si"></div>
                         <p>or use your account</p>
                         <form action="/user" method="POST">
                             <input type="text" placeholder="Name" id="name" name="name">
@@ -91,7 +66,45 @@
     function onSignIn(googleUser) {
       // get user profile information
       console.log(googleUser.getBasicProfile())
+    }</script>
+        <script>
+        
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});</script>
+        <script>
+        
+{
+    status: 'connected',
+    authResponse: {
+        accessToken: '...',
+        expiresIn:'...',
+        signedRequest:'...',
+        userID:'...'
     }
+}
+        </script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{your-app-id}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
             <script src="signup.js" type="text/javascript"></script>
     </body>
